@@ -1,0 +1,14 @@
+Install Typescript Globally:
+    - npm i -g typescript
+
+To run a typescript file:
+    - "tsc index.ts" (index.ts being the file you want to run)
+    - "tsc" will run and copile all ts files
+
+Initialise Typescript:
+    - tsc --init (this then generates a tsconfig.json file)
+    - on the tsconfig file, change "rootDir" to equal "./src" because tc files are usually on the src directory
+    - change "outDir" to equeal "./dist" so when the js files get generated/compiled, they remain on dist directory
+    - uncomment "removeComments: true" so that compiled code does not have comments therefore looks clean
+    - uncomment "noEmitOnError: true" so that js files don't get generated when ts has errors
+
